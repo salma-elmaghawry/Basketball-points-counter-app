@@ -17,6 +17,8 @@ class PointsCounter extends StatelessWidget
         ),
         body: Column(
           children: [
+            const SizedBox(height: 100,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -85,9 +87,12 @@ class PointsCounter extends StatelessWidget
                     )
                   ],   
                 ),
-                const VerticalDivider(
-                  color:Colors.grey 
-                ,thickness: 1,),
+                const SizedBox(
+                  height: 350,
+                  child:  VerticalDivider(
+                    color:Colors.grey 
+                  ,thickness: 1,),
+                ),
                 Column(
                   //colum for team B 
                   children: [
@@ -154,6 +159,22 @@ class PointsCounter extends StatelessWidget
               
               ],
             ),
+          const SizedBox(
+            height: 70,
+          ),
+          ElevatedButton(
+                    style:ElevatedButton.styleFrom(
+                      primary:Color.fromARGB(255, 233, 152, 32),
+                      minimumSize: Size(150, 50)
+                    ),
+                    onPressed: (){},
+                    child:const  Text('Reset',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                    ),),
+                    
+                    ),
           ],
         ),
       )
