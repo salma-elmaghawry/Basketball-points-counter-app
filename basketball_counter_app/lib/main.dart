@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp( PointsCounter());
+  runApp(PointsCounter());
 }
 
-class PointsCounter extends StatelessWidget {
+class PointsCounter extends StatefulWidget {
+  @override
+  State<PointsCounter> createState() => _PointsCounterState();
+}
+
+class _PointsCounterState extends State<PointsCounter> {
   int teamAPoints = 0;
   int teamBPoints = 0;
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -42,13 +46,15 @@ class PointsCounter extends StatelessWidget {
                           fontSize: 150,
                         ),
                       ),
-
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             padding: const EdgeInsets.all(8),
                             primary: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          teamAPoints++;
+                          print(teamAPoints);
+                        },
                         child: const Text(
                           'Add 1 Point',
                           style: TextStyle(
