@@ -13,66 +13,148 @@ class PointsCounter extends StatelessWidget
       home:Scaffold(
         appBar: AppBar(
           backgroundColor: Color.fromARGB(255, 233, 152, 32),
-          title: Text('Points Counter'),
+          title: const Text('Points Counter'),
         ),
         body: Column(
-          //colum for team A 
           children: [
-            //Text widget for team name 
-            Text('Team A',
-            style: TextStyle(
-              fontSize: 32,
-            ),
-            ),
-            //Text Widget for Score Counter 
-            Text('0',
-            style: TextStyle(
-              fontSize: 150,
-            ),
-            ),
-            
-          ElevatedButton(
-            style:ElevatedButton.styleFrom(
-              primary:Color.fromARGB(255, 233, 152, 32),
-              minimumSize: Size(150, 50)
-            ),
-            onPressed: (){},
-            child: Text('Add 1 Point',style: TextStyle(
-              fontSize: 19,
-              color: Colors.black,
-            ),),
-            
-            ),
-            const Spacer(flex: 1,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  //colum for team A 
+                  children: [
+                    //Text widget for team name 
+                    const Text('Team A',
+                    style: TextStyle(
+                      fontSize: 32,
+                    ),
+                    ),
+                    //Text Widget for Score Counter 
+                    const Text('0',
+                    style: TextStyle(
+                      fontSize: 150,
+                    ),
+                    ),
+                    
+                  ElevatedButton(
+                    style:ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.all(8),
+                      primary:Color.fromARGB(255, 233, 152, 32),
+                      minimumSize: Size(150, 50)
+                    ),
+                    onPressed: (){},
+                    child: const Text('Add 1 Point',style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.black,
+                    ),),
+                    
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
 
-            ElevatedButton(
-            style:ElevatedButton.styleFrom(
-              primary:Color.fromARGB(255, 233, 152, 32),
-              minimumSize: Size(150, 50)
+                    ElevatedButton(
+                    style:ElevatedButton.styleFrom(
+                      primary:Color.fromARGB(255, 233, 152, 32),
+                      minimumSize: Size(150, 50)
+                    ),
+                    onPressed: (){},
+                    child: const Text('Add 2 Point',style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.black,
+                    ),),
+                    
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    ElevatedButton(
+                    style:ElevatedButton.styleFrom(
+                      primary:Color.fromARGB(255, 233, 152, 32),
+                      minimumSize: Size(150, 50)
+                    ),
+                    onPressed: (){},
+                    child:const  Text('Add 3 Point',style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.black,
+                    ),),
+                    
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    )
+                  ],   
+                ),
+                const VerticalDivider(
+                  color:Colors.grey 
+                ,thickness: 1,),
+                Column(
+                  //colum for team B 
+                  children: [
+                    //Text widget for team name 
+                    const Text('Team B',
+                    style: TextStyle(
+                      fontSize: 32,
+                    ),
+                    ),
+                    //Text Widget for Score Counter 
+                    const Text('0',
+                    style: TextStyle(
+                      fontSize: 150,
+                    ),
+                    ),
+                    
+                  ElevatedButton(
+                    style:ElevatedButton.styleFrom(
+                      primary:Color.fromARGB(255, 233, 152, 32),
+                      minimumSize: Size(150, 50)
+                    ),
+                    onPressed: (){},
+                    child:const  Text('Add 1 Point',style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.black,
+                    ),),
+                    
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    ElevatedButton(
+                    style:ElevatedButton.styleFrom(
+                      primary:Color.fromARGB(255, 233, 152, 32),
+                      minimumSize: Size(150, 50)
+                    ),
+                    onPressed: (){},
+                    child:const  Text('Add 2 Point',style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.black,
+                    ),),
+                    
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    ElevatedButton(
+                    style:ElevatedButton.styleFrom(
+                      primary:Color.fromARGB(255, 233, 152, 32),
+                      minimumSize: Size(150, 50)
+                    ),
+                    onPressed: (){},
+                    child: const Text('Add 3 Point',style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.black,
+                    ),),
+                    
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    )
+                  ],   
+                )
+              
+              ],
             ),
-
-            onPressed: (){},
-            child: Text('Add 2 Point',style: TextStyle(
-              fontSize: 19,
-              color: Colors.black,
-            ),),
-            
-            ),
-            const Spacer(flex: 1,),
-            ElevatedButton(
-            style:ElevatedButton.styleFrom(
-              primary:Color.fromARGB(255, 233, 152, 32),
-              minimumSize: Size(150, 50)
-            ),
-            onPressed: (){},
-            child: Text('Add 3 Point',style: TextStyle(
-              fontSize: 19,
-              color: Colors.black,
-            ),),
-            
-            ),
-            const Spacer(flex: 10,)
-          ], 
+          ],
         ),
       )
     );
