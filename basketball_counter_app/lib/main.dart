@@ -12,6 +12,10 @@ class PointsCounter extends StatefulWidget {
 class _PointsCounterState extends State<PointsCounter> {
   int teamAPoints = 0;
   int teamBPoints = 0;
+  void addOnePoints() {
+    print('add one point');
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -33,7 +37,7 @@ class _PointsCounterState extends State<PointsCounter> {
                     //colum for team A
                     children: [
                       //Text widget for team name
-                      const Text(
+                    Text(
                         'Team A',
                         style: TextStyle(
                           fontSize: 32,
@@ -53,9 +57,12 @@ class _PointsCounterState extends State<PointsCounter> {
                             minimumSize: Size(150, 50)),
                         onPressed: () {
                           teamAPoints++;
+                          setState(() {
+
+                          });
                           print(teamAPoints);
                         },
-                        child: const Text(
+                        child:  Text(
                           'Add 1 Point',
                           style: TextStyle(
                             fontSize: 19,
