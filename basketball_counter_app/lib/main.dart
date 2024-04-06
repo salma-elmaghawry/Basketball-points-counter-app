@@ -37,7 +37,7 @@ class _PointsCounterState extends State<PointsCounter> {
                     //colum for team A
                     children: [
                       //Text widget for team name
-                    Text(
+                      Text(
                         'Team A',
                         style: TextStyle(
                           fontSize: 32,
@@ -56,13 +56,12 @@ class _PointsCounterState extends State<PointsCounter> {
                             primary: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
                         onPressed: () {
-                          teamAPoints++;
                           setState(() {
-
+                            teamAPoints++;
                           });
                           print(teamAPoints);
                         },
-                        child:  Text(
+                        child: const Text(
                           'Add 1 Point',
                           style: TextStyle(
                             fontSize: 19,
@@ -78,7 +77,11 @@ class _PointsCounterState extends State<PointsCounter> {
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            teamAPoints += 2;
+                          });
+                        },
                         child: const Text(
                           'Add 2 Point',
                           style: TextStyle(
@@ -94,7 +97,11 @@ class _PointsCounterState extends State<PointsCounter> {
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            teamAPoints += 3;
+                          });
+                        },
                         child: const Text(
                           'Add 3 Point',
                           style: TextStyle(
@@ -136,7 +143,11 @@ class _PointsCounterState extends State<PointsCounter> {
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            teamBPoints += 1;
+                          });
+                        },
                         child: const Text(
                           'Add 1 Point',
                           style: TextStyle(
@@ -152,7 +163,11 @@ class _PointsCounterState extends State<PointsCounter> {
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            teamBPoints += 2;
+                          });
+                        },
                         child: const Text(
                           'Add 2 Point',
                           style: TextStyle(
@@ -168,7 +183,11 @@ class _PointsCounterState extends State<PointsCounter> {
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            teamBPoints += 3;
+                          });
+                        },
                         child: const Text(
                           'Add 3 Point',
                           style: TextStyle(
@@ -191,7 +210,12 @@ class _PointsCounterState extends State<PointsCounter> {
                 style: ElevatedButton.styleFrom(
                     primary: Color.fromARGB(255, 233, 152, 32),
                     minimumSize: Size(150, 50)),
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    teamAPoints = 0;
+                    teamBPoints = 0;
+                  });
+                },
                 child: const Text(
                   'Reset',
                   style: TextStyle(
