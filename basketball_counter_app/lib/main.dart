@@ -37,7 +37,7 @@ class _PointsCounterState extends State<PointsCounter> {
                     //colum for team A
                     children: [
                       //Text widget for team name
-                      Text(
+                      const Text(
                         'Team A',
                         style: TextStyle(
                           fontSize: 32,
@@ -46,7 +46,7 @@ class _PointsCounterState extends State<PointsCounter> {
                       //Text Widget for Score Counter
                       Text(
                         '$teamAPoints',
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 150,
                         ),
                       ),
@@ -72,7 +72,6 @@ class _PointsCounterState extends State<PointsCounter> {
                       const SizedBox(
                         height: 16,
                       ),
-
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 233, 152, 32),
@@ -135,7 +134,7 @@ class _PointsCounterState extends State<PointsCounter> {
                       //Text Widget for Score Counter
                       Text(
                         '$teamBPoints',
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 150,
                         ),
                       ),
