@@ -52,8 +52,7 @@ class _PointsCounterState extends State<PointsCounter> {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            padding: const EdgeInsets.all(8),
-                            primary: Color.fromARGB(255, 233, 152, 32),
+                            padding: const EdgeInsets.all(8), backgroundColor: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
                         onPressed: () {
                           setState(() {
@@ -74,7 +73,7 @@ class _PointsCounterState extends State<PointsCounter> {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(255, 233, 152, 32),
+                            backgroundColor: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
                         onPressed: () {
                           setState(() {
@@ -94,7 +93,7 @@ class _PointsCounterState extends State<PointsCounter> {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(255, 233, 152, 32),
+                            backgroundColor: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
                         onPressed: () {
                           setState(() {
@@ -140,7 +139,7 @@ class _PointsCounterState extends State<PointsCounter> {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(255, 233, 152, 32),
+                            backgroundColor: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
                         onPressed: () {
                           setState(() {
@@ -160,7 +159,7 @@ class _PointsCounterState extends State<PointsCounter> {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(255, 233, 152, 32),
+                            backgroundColor: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
                         onPressed: () {
                           setState(() {
@@ -180,7 +179,7 @@ class _PointsCounterState extends State<PointsCounter> {
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Color.fromARGB(255, 233, 152, 32),
+                            backgroundColor: Color.fromARGB(255, 233, 152, 32),
                             minimumSize: Size(150, 50)),
                         onPressed: () {
                           setState(() {
@@ -207,7 +206,7 @@ class _PointsCounterState extends State<PointsCounter> {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(255, 233, 152, 32),
+                    backgroundColor: Color.fromARGB(255, 233, 152, 32),
                     minimumSize: Size(150, 50)),
                 onPressed: () {
                   setState(() {
