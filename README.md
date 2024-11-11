@@ -13,11 +13,14 @@ Welcome to the **Basketball Counter App**! 🎉 This app is designed to help tra
 
 ---
 
-## Screenshots 📸
+## 🎥 Demo Video
 
-![Basketball Counter App Screenshot](link-to-your-screenshot.png)
+Check out the video below to see the Notes App in action:
+
+[![Watch the video](https://img.youtube.com/vi/WwoSBMkeAjw/0.jpg)](https://youtube.com/shorts/WwoSBMkeAjw?si=RkC37DjNJWzc2rD6)
 
 ---
+
 
 ## Installation 📥
 
