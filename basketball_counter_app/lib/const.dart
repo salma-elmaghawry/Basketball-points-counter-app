@@ -1,3 +1,3 @@
 import 'dart:ui';
 
-const primaryColor = Color.fromARGB(255, 233, 152, 32);
+const primaryColor = Color(0xff522C4D);

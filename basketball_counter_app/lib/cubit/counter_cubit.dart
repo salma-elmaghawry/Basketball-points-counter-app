@@ -14,5 +14,15 @@ class CounterCubit extends Cubit<CounterState> {
       teamBPoints += buttonNumber;
       emit(CounterBIncrement());
     }
+    emit(CounterUpdated(teamAPoints, teamBPoints));
+  }
+
+  void resetTeamAPoints() {
+    teamAPoints = 0;
+  emit(CounterUpdated(teamAPoints, teamBPoints));
+  }
+  void resetTeamBPoints() {
+    teamBPoints = 0;
+    emit(CounterUpdated(teamAPoints, teamBPoints));
   }
 }

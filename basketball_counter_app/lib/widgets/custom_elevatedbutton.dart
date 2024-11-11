@@ -13,13 +13,13 @@ class CustomElevatedbutton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-          backgroundColor: backgroundColor, minimumSize: Size(150, 50)),
+          backgroundColor: backgroundColor, minimumSize:const  Size(150, 50)),
       onPressed: onPressed,
       child: Text(
         text,
         style: const TextStyle(
-          fontSize: 19,
-          color: Colors.black,
+          fontSize: 15,
+          color: Colors.white,
         ),
       ),
     );
