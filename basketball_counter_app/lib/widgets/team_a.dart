@@ -25,7 +25,7 @@ class TeamA extends StatelessWidget {
           onPressed: () {
             BlocProvider.of<CounterCubit>(context).teamIncrement("A", 1);
           },
-          backgroundColor: primaryColor,
+          backgroundColor: secColor,
           text: "Add 1 Point",
         ),
         const SizedBox(height: 16),
@@ -33,7 +33,7 @@ class TeamA extends StatelessWidget {
           onPressed: () {
             BlocProvider.of<CounterCubit>(context).teamIncrement("A", 2);
           },
-          backgroundColor: primaryColor,
+          backgroundColor: secColor,
           text: "Add 2 Points",
         ),
         const SizedBox(height: 16),
@@ -41,7 +41,7 @@ class TeamA extends StatelessWidget {
           onPressed: () {
             BlocProvider.of<CounterCubit>(context).teamIncrement("A", 3);
           },
-          backgroundColor: primaryColor,
+          backgroundColor: secColor,
           text: "Add 3 Points",
         ),
         const SizedBox(height: 16),
